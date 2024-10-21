@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Security and Risk Management Module</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Summary of Security and Risk Management Modules">
+  <meta name="keywords" content="Security, Risk Management, Threat Modelling, DR, SRM, Standards">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333333;
+    }
+    header {
+      background: #000000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      height: 50px;
+      vertical-align: middle;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 20px 0;
+    }
+    h2 {
+      font-size: 24px;
+      margin: 20px 0 10px;
+      color: #000000;
+    }
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 40px;
+      margin: 10px 0;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    section {
+      margin: 20px;
+      padding: 20px;
+      background: #f9f9f9;
+      border-bottom: 1px solid #dddddd;
+      border-radius: 8px;
+    }
+    footer {
+      background: #ffffff;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+    a {
+      color: #004080;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html">
+    <img src="assets/img/logo.png" alt="Logo">
+    <p>Matteo Marchi</p>
+  </a>
+</header>
+
+<section>
+  <h1>Security and Risk Management</h1>
+  <p>In the <strong>Security and Risk Management</strong> module, I delved into the intertwined nature of security and risk within modern enterprises. As businesses transition from traditional siloed operations to integrated, enterprise-wide solutions, understanding how security and risk management overlap becomes crucial. This module provided comprehensive insights into various areas where security and risk interact, including methods of risk assessment, threat modeling, and the implementation of security standards. I explored both qualitative and quantitative risk assessment techniques, traditional and hybrid risk models like STRIDE, DREAD, and Attack Trees, and common security standards such as PCI-DSS. Additionally, the module covered business continuity and disaster recovery (DR) solutions, and highlighted key research topics driving advancements in security and risk management.</p>
+
+  <p>By the end of this module I was able to:</p>
+  <ul>
+    <li>Describe when to use qualitative and quantitative risk assessments.</li>
+    <li>Create threat models for various scenarios.</li>
+    <li>Create quantitative risk models.</li>
+    <li>Design and explain DR strategies and solutions.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Unit 1: An Introduction to Security and Risk Management</h2>
+  <p>In <strong>Unit 1: An Introduction to Security and Risk Management</strong>, I reviewed common definitions and approaches to security and risk management. The unit covered essential security and risk management concepts and delved into the Risk Management Process (RMP). I learned to discuss various definitions of risk, assess, qualify, and mitigate risks, and describe approaches to quantify and qualify risks. Additionally, I became familiar with common security and risk standards, enabling me to select appropriate standards for specific situations.</p>
+
+  <p>By the end of this unit, I was able to:</p>
+  <ul>
+    <li>Discuss the various definitions of risk.</li>
+    <li>Explain how to assess, qualify, and mitigate risks.</li>
+    <li>Describe various approaches to quantify and qualify risks.</li>
+    <li>List common security and risk standards and select the appropriate ones for a given situation.</li>
+    <section style="font-size: 0.9em; margin: 20px;">
+        <h2>Required Reading</h2>
+        <ul>
+            <li>Olson, D.L. & Desheng D.W (2020) <em>Enterprise Risk Management Models</em>. Berlin, Germany: Springer. Chapter 1.</li>
+            <li>Stoneburner, G., Goguen, A. & Feringa, A. (2002) <em>SP 800-30: Risk Management Guide for Information Technology Systems</em>.</li>
+            <li>Sørensen, B.T. (2018) <em>Digitalisation: An Opportunity or a Risk?</em> <em>Journal of European Competition Law & Practice</em>, 9(6). 349–350.</li>
+            <li>Kovaitė, K. and Stankevičienė, J. (2019) <em>Risks of Digitalisation of Business Models</em>. <em>Proceedings of 6th International Scientific Conference Contemporary Issues in Business, Management and Economics Engineering ‘2019</em>.</li>
+        </ul>
+        
+        <h2>Additional Reading</h2>
+        <ul>
+            <li>Campbell, T. (2016) <em>Practical Information Security Management</em>. 1st ed. APRESS. Chapters 1 and 2.</li>
+            <li>Hubbard, D. (2020). <em>The Failure of Risk Management: Why It’s Broken and How to Fix It</em>, 1st ed. Wiley and Sons. Chapter 6.</li>
+            <li>Blakley, B., McDermott, E. & Geer, D. (2001) <em>Information Security is Information Risk Management</em>. <em>Proceedings of the 2001 Workshop on New Security Paradigms</em>, 1(1): 97-104.</li>
+        </ul>
+    </section>
+  </ul>
+</section>
+
+<section>
+  <h2>Unit 2: Users, Assessments and the Risk Management Process</h2>
+  <p>In <strong>Unit 2: Users, Assessments and the Risk Management Process</strong>, I conducted a deeper dive into the Risk Management Process (RMP), focusing on the effects of different assessment types (qualitative versus quantitative) and the role of user participation. I explored how varying assessment approaches impact the RMP and discussed potential changes to the process based on user involvement.</p>
+
+  <p>By the end of this unit, I was able to:</p>
+  <ul>
+    <li>Discuss the differences between assessment approaches (Qualitative vs. Quantitative).</li>
+    <li>Explain the importance of user participation in the risk management process.</li>
+    <li>Discuss the implications of any recommended mitigations.</li>
+  </ul>
+  <section style="font-size: 0.9em; margin: 20px;">
+    <h2>Required Reading</h2>
+    <ul>
+        <li>Spears, J. & Barki, H. (2010) <em>User Participation in Information Systems Security Risk Management</em>. MIS Quarterly, 34(3), 503.</li>
+        <li>Renn, O., Beier, G. & Schweizer, P.-J. (2021) <em>The Opportunities and Risks of Digitalisation for Sustainable Development: A Systemic Perspective</em>. GAIA - Ecological Perspectives for Science and Society, 30(1), pp.23–28.</li>
+        <li>Josey, A., Hietala, J. & Jones, J. (2014) <em>Introducing The Open Group Open FAIR™ Risk Analysis Tool</em>.</li>
+        <li>AIRMIC (2010) <em>A Structured Approach to Enterprise Risk Management</em>.</li>
+    </ul>
+    
+    <h2>Additional Reading</h2>
+    <ul>
+        <li>Wang, J., Neil, M. & Fenton, N. (2020) <em>A Bayesian Network Approach for Cybersecurity Risk Assessment Implementing and Extending the FAIR Model</em>. Computers & Security, 89, 101659.</li>
+    </ul>
+</section>
+</section>
+
+<section>
+  <h2>Unit 3: Introduction to Threat Modelling and Management</h2>
+  <p>In <strong>Unit 3: Introduction to Threat Modelling and Management</strong>, I explored various approaches to threat modelling, including popular techniques like STRIDE, DREAD, Attack Trees, and hybrid models such as PASTA (Process for Attack Simulation and Threat Analysis). I also reviewed guides and cookbooks that assist in selecting the appropriate framework for threat modelling.</p>
+
+  <p>By the end of this unit, I was able to:</p>
+  <ul>
+    <li>Describe various threat modelling techniques.</li>
+    <li>Advise on which technique should be used in specific situations.</li>
+    <li>Discuss when techniques should be combined in a hybrid model.</li>
+  </ul>
+  <section style="font-size: 0.9em; margin: 20px;">
+    <h2>Required Reading</h2>
+    <ul>
+        <li>Shevchenko, N., Chick, T. A., O'Riordan, P., Scanlon, T. P., & Woody, C. (2018). <em>Threat Modeling: A Summary of Available Methods</em>. Carnegie Mellon University Software Engineering Institute, Pittsburgh, United States.</li>
+        <li>NIST (2022). <em>IT Laboratory Computer Security Resource Center</em>.</li>
+        <li>Shostack, A., et al. (2020). <em>The Threat Modelling Manifesto</em>.</li>
+    </ul>
+    
+    <h2>Additional Reading</h2>
+    <ul>
+        <li>Shostack, A. (2014). <em>Threat Modeling: Designing for Security</em>. Wiley & Sons Ltd. Chapters 1 and 2.</li>
+    </ul>
+</section>
+
+</section>
+
+<section>
+  <h2>Unit 4: Application of Threat Modelling and Management Techniques</h2>
+  <p>In <strong>Unit 4: Application of Threat Modelling and Management Techniques</strong>, I practiced threat modelling and management using tools like the Threat Modelling Manifesto, OWASP Cookbook, and the Mitre ATT&CK database. I evaluated the use of publicly available tools and created threat models based on suggested scenarios.</p>
+
+  <p>By the end of this unit, I was able to:</p>
+  <ul>
+    <li>Describe where to find key tools and resources used for threat modelling.</li>
+    <li>Explain how to select the most appropriate tool for various situations.</li>
+    <li>Critically evaluate the use of such tools.</li>
+  </ul>
+  <section style="font-size: 0.9em; margin: 20px;">
+    <h2>Required Reading</h2>
+    <ul>
+        <li>Shostack, A. (2014). <em>Threat Modeling: Designing for Security</em>. Wiley & Sons Ltd. Chapters 3 - 6.</li>
+        <li>Shevchenko, N., Chick, T. A., O'Riordan, P., Scanlon, T. P., & Woody, C. (2018). <em>Threat Modeling: A Summary of Available Methods</em>. Carnegie Mellon University Software Engineering Institute, Pittsburgh, United States.</li>
+        <li>Meier, J., Mackman, A., Dunner, M., Vasireddy, S., Escamilla, R., & Murukan, A. (2003). <em>Improving Web Application Security: Threats and Countermeasures</em>.</li>
+        <li>Ross, R., McEvilley, M., & Oren, J. (2016). <em>Systems Security Engineering: Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems</em>.</li>
+        <li>Github. (2021). <em>Threat Modelling Cookbook</em>.</li>
+    </ul>
+    
+    <h2>Additional Reading</h2>
+    <ul>
+        <li>Hijazi, H., Alqrainy, S., Muaidi, H., & Khdour, T. (2014). <em>Identifying Causality Relation between Software Projects Risk Factors</em>. <em>International Journal of Software Engineering and its Applications</em>, 8(2), 51-58.</li>
+        <li>Salter, C., Saydjari, O., Schneier, B., & Wallner, J. (1998). <em>Toward a Secure System Engineering Methodology</em>. In: <em>Proceedings of the 1998 Workshop on New Security Paradigms (NSPW ’98)</em>, Charlottesville, Virginia, United States, pp. 2–10.</li>
+    </ul>
+</section>
+
+</section>
+
+<section>
+  <h2>Unit 5: An Introduction to Security and Risk Standards in Industry and the Enterprise</h2>
+  <p>In <strong>Unit 5: An Introduction to Security and Risk Standards in Industry and the Enterprise</strong>, I examined industry-specific security standards and directives. The unit discussed how standards affect security and risk assessments and reviewed common industry and enterprise standards.</p>
+
+  <p>By the end of this unit, I was able to:</p>
+  <ul>
+    <li>List common security standards and select the appropriate one(s) for a given situation.</li>
+    <li>Describe how to incorporate standards into typical threat models.</li>
+  </ul>
+  <section style="font-size: 0.9em; margin: 20px;">
+    <h2>Required Reading</h2>
+    <ul>
+        <li>Barafort, B., Mesquida, A.-L., & Mas, A. (2018). <em>ISO 31000-based Integrated Risk Management Process Assessment Model for IT Organizations</em>. <em>Journal of Software: Evolution and Process</em>, 31(1), p.e1984.</li>
+        <li>Kirvan, P. (2021). <em>Top 10 IT Security Frameworks and Standards Explained</em>.</li>
+    </ul>
+    
+    <h2>Additional Reading</h2>
+    <ul>
+        <li>Campbell, T. (2016). <em>Practical Information Security Management</em>. 1st ed. APRESS. Chapter 7.</li>
+    </ul>
+</section>
+
+</section>
+
+<section>
+  <h2>Unit 6: The Practical Implications of Security and Risk Standards</h2>
+  <p>In <strong>Unit 6: The Practical Implications of Security and Risk Standards</strong>, I focused on security compliance standards for various industries, building on previous material. The unit included GDPR-related case studies, reviewed standards websites, and discussed how standards integrate into security and risk management strategies.</p>
+
+  <p>By the end of this unit, I was able to:</p>
+  <ul>
+    <li>Explain which GDPR regulations are applicable in specific situations.</li>
+    <li>Describe which other standards might apply in selected situations.</li>
+    <li>Advise on mitigations to help a business meet any of the standards applicable to its specific industry (e.g., data and privacy (GDPR), financial (PCI-DSS)).</li>
+  </ul>
+  <section style="font-size: 0.9em; margin: 20px;">
+    <h2>Required Reading</h2>
+    <ul>
+        <li>Kirvan, P. (2021). <em>Top 10 IT Security Frameworks and Standards Explained</em>.</li>
+    </ul>
+    
+    <h2>Additional Reading</h2>
+    <ul>
+        <li>Campbell, T. (2016). <em>Practical Information Security Management</em>. 1st ed. APRESS. Chapter 6.</li>
+    </ul>
+</section>
+
+
+
+  <h1><a href="assets/PDFs/Development Team Project Final.pdf"> Development Team Project: Risk Identification Report </a></h1>
+  
+  <p>In <strong>Assignment Part 1: A Report by a Security and Risk Management Team</strong>, our team was tasked with conducting a comprehensive risk assessment for Pampered Pets, a bricks-and-mortar business based in Hashington-on-the-Water. The objective was to evaluate the risks associated with both the current operational state and the proposed digitalisation process, ultimately recommending whether the business should proceed with digital transformation.</p>
+  
+  <h2>Current Risk Assessment</h2>
+  <p>We carried out a risk assessment of Pampered Pets as it stood currently, which included the following tasks:</p>
+  
+  <ul>
+    <li><strong>Selection of Risk Assessment Methodology:</strong> We selected a combination of ISO 31000 and Qualitative Risk Assessment (Hybrid Framework Approach), providing justifications for our choice based on the business's specific needs and operational context.</li>
+    
+    <li><strong>Risk and Threat Modelling:</strong> We conducted a thorough risk and threat modelling exercise to enumerate and evaluate the existing threats and risks facing the business. This included identifying operational risks, cybersecurity vulnerabilities, and financial risks related to digital transaction records using the OCTAVE Framework.</li>
+    
+    <li><strong>Identification of Mitigation Strategies:</strong> We compiled a comprehensive list of potential mitigations to address the identified risks and threats. These mitigations aimed to enhance cybersecurity measures, upgrade the warehouse management system, and ensure accurate financial auditing.</li>
+  </ul>
+  
+  <h2>Digitalisation Risk Assessment</h2>
+  <p>We also performed a risk assessment focused on the potential digitalisation process for Pampered Pets, which involved the following:</p>
+  
+  <ul>
+    <li><strong>Selection of Risk Assessment Methodology:</strong> We chose the OCTAVE framework as risk assessment methodology for evaluating the digitalisation process, justifying our selection based on its effectiveness in assessing technological transformations.</li>
+    
+    <li><strong>Listing of Proposed Changes:</strong> We outlined the proposed changes that would form the basis of the digitalisation process, including the implementation of an e-commerce portal, adoption of an ERP system, expansion of online marketing efforts, and the introduction of blogs.</li>
+    
+    <li><strong>Risk and Threat Modelling Exercise:</strong> We executed a risk and threat modelling exercise to identify and assess the potential threats and risks associated with the proposed digitalisation changes. This included evaluating increased cyber threats, operational disruptions during the transition, and customer retention risks.</li>
+    
+    <li><strong>Identification of Mitigation Strategies:</strong> We developed a list of potential mitigations to counteract the identified risks and threats related to digitalisation. </li>
+  </ul>
+  
+  <h2>Conclusions</h2>
+  <p>Pampered Pets faces a variety of risks, both from its IT infrastructure and its reliance on local suppliers. The OCTAVE framework has helped identify critical assets, potential threats, and vulnerabilities, leading to specific mitigation strategies. By implementing the recommended actions, Pampered Pets can significantly reduce the likelihood and impact of risks, safeguarding its business operations, customer data, and financial integrity. </p>
+  
+  
+</section>
+
+<section>
+  <h2>Unit 7: An Introduction to the Concepts of Quantitative Risk Modelling</h2>
+  <p>In <strong>Unit 7: An Introduction to the Concepts of Quantitative Risk Modelling</strong>, I reviewed various methods for quantitative risk modelling (QRM), including probabilistic approaches like Monte Carlo simulations and Bayes theorem-based methods, as well as multi-criteria decision analysis techniques like TOPSIS, AHP, and ANP. I learned principles and antipatterns for each approach.</p>
+
+  <p>By the end of this unit, I was able to:</p>
+  <ul>
+    <li>Utilize quantitative risk modelling techniques to produce risk models.</li>
+    <li>Select the most appropriate technique based on the real-world problem.</li>
+    <li>Critically evaluate the pros and cons of the selected approach.</li>
+  </ul>
+
+  <section style="font-size: 0.9em; margin: 20px;">
+    <h2>Required Reading</h2>
+    <ul>
+        <li>Olson, D.L. & Desheng D.W. (2020). <em>Enterprise Risk Management Models</em>. Berlin, Germany: Springer. Chapters 2 - 9.</li>
+        <li>Asadabadi, M., Chang, & Saberi, M. (2019). <em>Are MCDM Methods Useful? A Critical Review of Analytic Hierarchy Process (AHP) and Analytic Network Process (ANP)</em>. <em>Cogent Engineering</em>, 6(1), 162315.</li>
+        <li>Spring, J., Hatleback, E., Householder, A., Manion, A., & Shick, D. (2021). <em>Time to Change the CVSS?</em> <em>IEEE Security & Privacy</em>, 19(2), 74–78.</li>
+        <li>Winston, W. <em>Introduction to Monte Carlo Simulation in Excel</em>.</li>
+        <li>Downey, A. (2021). <em>Think Bayes 2</em>.</li>
+    </ul>
+</section>
+
+
+</section>
+
+<section>
+  <h2>Unit 8: Implementing Quantitative Risk Models</h2>
+  <p>In <strong>Unit 8: Implementing Quantitative Risk Models</strong>, I applied Monte Carlo simulations and Bayes Theorem to real-world problems as part of the project management process and safety estimating tools. I reviewed case studies demonstrating QRM techniques and critically evaluated the available techniques.</p>
+
+  <p>By the end of this unit, I was able to:</p>
+  <ul>
+    <li>Select the most appropriate modelling technique to use in a given situation.</li>
+    <li>Create a quantitative risk (QR) model of a real-world situation.</li>
+    <li>Provide a critical appraisal of the use of QR techniques.</li>
+  </ul>
+
+  <section style="font-size: 0.9em; margin: 20px;">
+    <h2>Required Reading</h2>
+    <ul>
+        <li>Olson, D.L. & Desheng D.W (2020). <em>Enterprise Risk Management Models</em>. Berlin, Germany: Springer. Chapters 2 - 9.</li>
+        <li>Downey, A. (2016). <em>Think Bayes</em>. Sebastopol, CA: O’Reilly. Chapters 1 - 3.</li>
+        <li>Goerlandt, F., Khakzad, N. and Reniers, G. (2017). <em>Validity and Validation of Safety-Related Quantitative Risk Analysis: A Review</em>. <em>Safety Science</em>, 99, pp.127–139.</li>
+        <li>Hugo, F.D., Pretorius, L. & Benade, S.J. (2018). <em>Some Aspects of the Use and Usefulness of Quantitative Risk Analysis Tools in Project Management</em>. <em>South African Journal of Industrial Engineering</em>, 29(4).</li>
+        <li>Çelikbilek, Y. & Tüysüz, F. (2020). <em>An In-depth Review of Theory of the TOPSIS Method: An Experimental Analysis</em>. <em>Journal of Management Analytics</em>, 7(2), 281-300.</li>
+        <li>Eckstein, J. and Riedmueller, S.T. (2002). <em>YASAI: Yet Another Add-in for Teaching Elementary Monte Carlo Simulation in Excel</em>. <em>INFORMS Transactions on Education</em>, 2(2), pp.12–26.</li>
+        <li>Karen, T. (2021). <em>Monte Carlo Simulation and Variants with Python</em>.</li>
+    </ul>
+    
+    <h2>Additional Reading</h2>
+    <ul>
+        <li>Hijazi, H., Alqrainy, S., Muaidi, H. & Khdour, T. (2014). <em>Identifying Causality Relation between Software Projects Risk Factors</em>. <em>International Journal of Software Engineering and its Applications</em>, 8(2), 51-58.</li>
+        <li>Salter, C., Saydjari, O., Schneier, B., & Wallner, J. (1998). <em>Toward a Secure System Engineering Methodology</em>. In: <em>Proceedings of the 1998 Workshop on New Security Paradigms (NSPW ’98)</em>, Charlottesville, Virginia, United States, pp. 2–10.</li>
+    </ul>
+</section>
+
+
+</section>
+
+<section>
+  <h2>Unit 9: Risk, Business Continuity and Disaster Recovery</h2>
+  <p>In <strong>Unit 9: Risk, Business Continuity and Disaster Recovery</strong>, I discussed business continuity (BC) and disaster recovery (DR) plans as crucial tools for risk management and mitigation. The unit covered the main determining factors in BC/DR plans, including Business Impact Assessments (BIA), Recovery Time Objectives (RTOs), and Recovery Point Objectives (RPOs). It also examined emerging trends in Information Risk Management.</p>
+
+  <p>By the end of this unit, I was able to:</p>
+  <ul>
+    <li>Explain what is meant by BC, DR, RTO, and RPO.</li>
+    <li>Suggest the most suitable solutions to meet specific recovery objectives.</li>
+    <li>Discuss factors driving the future of the Information Risk Management field.</li>
+  </ul>
+
+  <section style="font-size: 0.9em; margin: 20px;">
+    <h2>Required Reading</h2>
+    <ul>
+        <li>Olson, D.L. & Desheng D.W (2020). <em>Enterprise Risk Management Models</em>. Berlin, Germany: Springer. Chapter 13.</li>
+        <li>Andrade, E., Nogueira, B., Matos, R., Callou, G. & Maciel, P. (2017). <em>Availability Modeling and Analysis of a Disaster-Recovery-as-a-Service Solution</em>. <em>Computing</em>, 99(10), pp.929–954.</li>
+    </ul>
+</section>
+
+
+</section>
+
+<section>
+  <h2>Unit 10: Practical Applications and Issues in DR Implementations</h2>
+  <p>In <strong>Unit 10: Practical Applications and Issues in DR Implementations</strong>, I explored practical aspects of disaster recovery (DR) design, examining typical system solutions to meet standby requirements. The unit discussed how RPO and RTO values impact DR solutions and described the limitations of proposed solutions.</p>
+
+  <p>By the end of this unit, I was able to:</p>
+  <ul>
+    <li>Design a solution that meets a set of RPO and RTO requirements.</li>
+    <li>Describe the advantages and disadvantages of DRaaS.</li>
+    <li>Discuss challenges with vendor lock-in, resilience, and network security.</li>
+  </ul>
+
+  <section style="font-size: 0.9em; margin: 20px;">
+    <h2>Required Reading</h2>
+    <ul>
+        <li>Morrow, T., LaPiana, V., Faatz, D., Hueca, A., & Richmond, N. (2021). <em>Cloud Security Best Practices Derived from Mission Thread Analysis</em>. Carnegie-Mellon University, Pittsburgh, PA.</li>
+        <li>Opara-Martins, J., Sahandi, R., & Tian, F. (2014). <em>Critical Review of Vendor Lock-in and Its Impact on Adoption of Cloud Computing</em>. In <em>International Conference on Information Society (i-Society 2014)</em> (pp. 92-97). IEEE.</li>
+        <li>Alhazmi, O. & Malaiya, Y. (2013). <em>Evaluating Disaster Recovery Plans Using the Cloud</em>. <em>2013 Proceedings Annual Reliability and Maintainability Symposium (RAMS)</em>, 1(1), 1-6.</li>
+    </ul>
+</section>
+
+</section>
+
+<section>
+  <h2>Unit 11: Future Trends in Security and Risk Management</h2>
+  <p>In <strong>Unit 11: Future Trends in Security and Risk Management</strong>, I reviewed current and emerging trends in security and risk management, including economic theory, AI, and automation. The unit discussed the pros and cons of each trend and evaluated their potential influence on future directions in SRM.</p>
+
+  <h1><a href="assets/PDFs/MATTEO MARCHI - Individual Project- Executive Summary (1).pdf"> Individual Project: Executive Summary </a></h1>
+
+
+  <p>By the end of this unit, I was able to:</p>
+  <ul>
+    <li>Describe the main emerging IT trends.</li>
+    <li>Explain how these trends can affect SRM solutions.</li>
+    <li>Critically evaluate the effect these trends will have on SRM systems.</li>
+  </ul>
+
+  <section style="font-size: 0.9em; margin: 20px;">
+    <h2>Required Reading</h2>
+    <ul>
+        <li>Olson, D.L. & Desheng D.W (2020). <em>Enterprise Risk Management Models</em>. Berlin, Germany: Springer. Chapters 3-5 for the Unit 11 Assignment. Chapter 12.</li>
+        <li>Pineiro-Chousa, J., Vizcaíno-González, M., López-Cabarcos, M., & Romero-Castro, N. (2017). <em>Managing Reputational Risk through Environmental Management and Reporting: An Options Theory Approach</em>. <em>Sustainability</em>, 9(3), 376-391.</li>
+        <li>Fahimnia, B., Pournader, M., Siemsen, E., Bendoly, E., & Wang, C. (2019). <em>Behavioral Operations and Supply Chain Management–A Review and Literature Mapping</em>. <em>Decision Sciences</em>, 50(6), 1127-1183.</li>
+        <li>Ridley, A., McCloskey, J., & Mountain, D. (2018). <em>Machine Learning for Autonomous Cyber Defense</em>. <em>The Next Wave</em>, 22(1), 7-14.</li>
+        <li>Varshney, K. & Alemzadeh, H. (2017). <em>On the Safety of Machine Learning: Cyber-Physical Systems, Decision Sciences, and Data Products</em>. <em>Big Data</em>, 5(3), 246-255.</li>
+        <li>Fraser, J. & Simkins, B. (2016). <em>The Challenges of and Solutions for Implementing Enterprise Risk Management</em>. <em>Business Horizons</em>, 59(6), 689-698.</li>
+        <li>Aven, T. (2016). <em>Risk Assessment and Risk Management: Review of Recent Advances on Their Foundation</em>. <em>European Journal of Operational Research</em>, 253(1), 1-13.</li>
+    </ul>
+</section>
+
+
+
+</section>
+
+<section>
+  <h2>Unit 12: The Great Debate: What will be the most influential trend in SRM in the next 5 years?</h2>
+  <p>In <strong>Unit 12: The Great Debate: What will be the most influential trend in SRM in the next 5 years?</strong>, the final unit of the module, I participated in a collaborative debate to determine which of four global trends—AI, Automation, Web 3.0, or Security—will have the most significant impact on SRM over the next five years. The unit involved discussions, presentations, and voting to decide the most influential trend.</p>
+
+  <p>By the end of this unit, I was able to:</p>
+  <ul>
+    <li>Describe the main emerging trends in the field.</li>
+    <li>Argue for which trend I believe to be the most influential.</li>
+    
+  </ul>
+</section>
+
+<section style="font-size: 0.9em; margin: 20px;">
+    <h2>Required Reading</h2>
+    <ul>
+        <li>
+            Olson, D.L. & Desheng D.W. (2020). <em>Enterprise Risk Management Models</em>. Berlin, Germany: Springer.
+            <ul>
+                <li>Chapters 3-5 for the Unit 11 Assignment.</li>
+                <li>Chapter 12.</li>
+            </ul>
+        </li>
+        <li>
+            Pineiro-Chousa, J., Vizcaíno-González, M., López-Cabarcos, M., & Romero-Castro, N. (2017). <em>Managing Reputational Risk through Environmental Management and Reporting: An Options Theory Approach</em>. <em>Sustainability</em>, 9(3), 376-391.
+        </li>
+        <li>
+            Fahimnia, B., Pournader, M., Siemsen, E., Bendoly, E., & Wang, C. (2019). <em>Behavioral Operations and Supply Chain Management–A Review and Literature Mapping</em>. <em>Decision Sciences</em>, 50(6), 1127-1183.
+        </li>
+        <li>
+            Ridley, A., McCloskey, J., & Mountain, D. (2018). <em>Machine Learning for Autonomous Cyber Defense</em>. <em>The Next Wave</em>, 22(1), 7-14.
+        </li>
+        <li>
+            Varshney, K., & Alemzadeh, H. (2017). <em>On the Safety of Machine Learning: Cyber-Physical Systems, Decision Sciences, and Data Products</em>. <em>Big Data</em>, 5(3), 246-255.
+        </li>
+        <li>
+            Fraser, J., & Simkins, B. (2016). <em>The Challenges of and Solutions for Implementing Enterprise Risk Management</em>. <em>Business Horizons</em>, 59(6), 689-698.
+        </li>
+        <li>
+            Aven, T. (2016). <em>Risk Assessment and Risk Management: Review of Recent Advances on Their Foundation</em>. <em>European Journal of Operational Research</em>, 253(1), 1-13.
+        </li>
+    </ul>
+    
+    <h2>Additional Reading</h2>
+    <ul>
+        <li>
+            Campbell, T. (2016). <em>Practical Information Security Management</em>. 1st ed. APRESS.
+            <ul>
+                <li>Chapter 6.</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+
+<footer>
+  <p>&copy; 2024 Matteo Marchi</p>
+</footer>
+
+</body>
+</html>
