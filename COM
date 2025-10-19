@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud Operations and Management Portfolio</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 3vw; background-color: #f6f8fa; }
+        h1, h2 { color: #1a237e; }
+        h3 { color: #546e7a; margin-top: 1.5em; }
+        section { background: #fff; padding: 2em; margin-bottom: 2em; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);}
+        .unit { margin-top: 2em;}
+        ul, ol { margin-top: 0.5em; }
+        .reflections { background: #e3eafc; padding: 1em; border-radius: 8px; margin-top: 1em;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cloud Operations and Management Portfolio</h1>
+        <h2>Module e-Portfolio (2025)</h2>
+        <p>
+            This portfolio documents my learning journey through twelve units in cloud computing, covering foundational concepts, hands-on skills, security, architecture, automation, and industry applications.
+        </p>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>
+            Cloud computing has fundamentally transformed technology, shifting how organizations manage IT through on-demand infrastructure (IaaS), platform abstraction (PaaS), and software delivery (SaaS). With service models deployed across public, private, hybrid, and community clouds, the field is defined by automation, virtualization, containerization, and emerging AI/edge trends.
+        </p>
+    </section>
+
+    <!-- Repeat this structure for each unit -->
+    <section class="unit">
+        <h2>Unit 1: Cloud Fundamentals and Service Models</h2>
+        <ul>
+            <li>IaaS, PaaS, SaaS fundamentals</li>
+            <li>Deployment models: Public, Private, Hybrid</li>
+            <li>On-demand self-service, resource pooling, elasticity</li>
+        </ul>
+        <div class="reflections">
+            <strong>Reflection:</strong>
+            <p>
+                Gained comprehensive understanding of cloud models and environments. Compared AWS, Google Cloud, Azure for differences in scalability and service portfolios. Recognized multi-cloud benefits and complexities for governance.
+            </p>
+        </div>
+    </section>
+
+    <section class="unit">
+        <h2>Unit 2: Cloud-Native Tools and Containerization</h2>
+        <ul>
+            <li>Docker & Kubernetes setup—containers, orchestration</li>
+            <li>Pods, services, replica sets</li>
+            <li>Benefits: isolation, self-healing, scalable architecture</li>
+        </ul>
+        <div class="reflections">
+            <strong>Reflection:</strong>
+            <p>
+                Learned how Kubernetes automates scale/manage container clusters; Docker ensures consistency from dev to prod. Applied skills in multi-cloud orchestration, improved deployment speed and security.
+            </p>
+        </div>
+    </section>
+
+    <section class="unit">
+        <h2>Unit 3: Cloud Design Tools</h2>
+        <ul>
+            <li>Hybrid patterns, cloud bursting, data sovereignty</li>
+            <li>Integration and segmentation for compliance, security & performance</li>
+        </ul>
+        <div class="reflections">
+            <strong>Reflection:</strong>
+            <p>
+                Explored hybrid architectures integrating AWS and Azure. Realized multi-cloud resiliency benefits and increased need for standardized processes.
+            </p>
+        </div>
+    </section>
+
+    <section class="unit">
+        <h2>Unit 4: Infrastructure as Code (IaC)</h2>
+        <ul>
+            <li>Terraform scripting for AWS/Azure resources</li>
+            <li>Declarative infrastructure automation & version control</li>
+            <li>DevOps CI/CD pipeline integration</li>
+        </ul>
+        <div class="reflections">
+            <strong>Reflection:</strong>
+            <p>
+                IaC replaced manual configuration, improving repeatability and auditability. Applied governance through TOGAF and SDLC for automated compliance and change management.
+            </p>
+        </div>
+    </section>
+
+    <section class="unit">
+        <h2>Unit 5: Hybrid Cloud Architecture</h2>
+        <ul>
+            <li>On-prem/private/public integration and security</li>
+            <li>Technologies: VPN, WAN, APIs</li>
+            <li>Industry case studies: finance, retail</li>
+        </ul>
+        <div class="reflections">
+            <strong>Reflection:</strong>
+            <p>
+                Analyzed hybrid strategies and implementation challenges—connectivity, data sync, and unified control. Recognized flexibility vs. operationally complex environments.
+            </p>
+        </div>
+    </section>
+
+    <section class="unit">
+        <h2>Unit 6: Infrastructure as Code (IaC) & DevOps</h2>
+        <ul>
+            <li>Terraform coding, multi-cloud management</li>
+            <li>Provider-agnostic tooling, change tracking</li>
+            <li>Automated provisioning in DevOps pipelines</li>
+        </ul>
+        <div class="reflections">
+            <strong>Reflection:</strong>
+            <p>
+                IaC streamlined deployments, enhanced consistency. Integrated with Jenkins/Kubernetes in CI/CD for testable, robust infrastructure.
+            </p>
+        </div>
+    </section>
+
+    <section class="unit">
+        <h2>Unit 7: Cloud Security, Compliance & Risk</h2>
+        <ul>
+            <li>ISO 27001, GDPR frameworks</li>
+            <li>Encryption, multi-factor access, zero trust</li>
+            <li>Incident response, compliance audits</li>
+        </ul>
+        <div class="reflections">
+            <strong>Reflection:</strong>
+            <p>
+                Mapped controls to ISO/GDPR, implemented multi-factor IAM. Explored continuous compliance automation and vulnerability assessment.
+            </p>
+        </div>
+    </section>
+
+    <section class="unit">
+        <h2>Unit 8: Edge Computing & IoT</h2>
+        <ul>
+            <li>Real-time computation, latency reduction</li>
+            <li>Smart city/retail IoT strategies</li>
+            <li>Bandwidth optimization, edge AI</li>
+        </ul>
+        <div class="reflections">
+            <strong>Reflection:</strong>
+            <p>
+                Integrated IoT and edge devices in distributed networks. Noted importance for latency-sensitive applications; planned to leverage edge AI for real-time analytics.
+            </p>
+        </div>
+    </section>
+
+    <section class="unit">
+        <h2>Unit 9: Disaster Recovery & Business Continuity</h2>
+        <ul>
+            <li>Recovery Time Objective (RTO), Recovery Point Objective (RPO)</li>
+            <li>DR solutions, compliance integration</li>
+            <li>Multi-cloud active-active replication</li>
+        </ul>
+        <div class="reflections">
+            <strong>Reflection:</strong>
+            <p>
+                Recognized trade-offs in DR cost vs. resilience. Simulated DR operations with open-source tools; connected practices to regulatory frameworks and audits.
+            </p>
+        </div>
+    </section>
+
+    <section class="unit">
+        <h2>Unit 10: AI, ML & Emerging Trends</h2>
+        <ul>
+            <li>Managed AI services: Azure OpenAI, AWS SageMaker, Google AutoML</li>
+            <li>AI-driven analytics, automation, predictive ops</li>
+            <li>Trends: edge AI, cost reduction, scaling limitations</li>
+        </ul>
+        <div class="reflections">
+            <strong>Reflection:</strong>
+            <p>
+                Developed skills in deploying ML/cloud AI—Azure, AWS, Google. Experimented with predictive analytics for optimization; noted cost/training limitations.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Conclusion & Forward Planning</h2>
+        <p>
+            This e-Portfolio consolidates intensive learning in cloud operations, containerization, automation, security, and industry applications. Future priorities include advanced AI/ML, serverless architectures, continuous security automation, multi-cloud orchestration, and professional certification.
+        </p>
+    </section>
+</body>
+</html>
